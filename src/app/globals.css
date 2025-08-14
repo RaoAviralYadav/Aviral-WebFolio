@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-brandBlack text-brandWhite font-sans;
+}
+
+/* Your existing global styles ... */
+
+/* Scroll Progress Bar */
+.scroll-progress-bar {
+  transform-origin: left;
+  will-change: transform; /* smoother GPU-accelerated scaling */
+}
+
+/* Blobs positioning */
+.blob-top-left {
+  top: 10%;
+  left: -20%;
+}
+
+.blob-bottom-right {
+  bottom: 15%;
+  right: -15%;
+}
+
+/* Radial highlights background */
+.radial-highlights {
+  background-image: radial-gradient(
+      circle at 20% 30%,
+      rgba(255, 255, 255, 0.08) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(255, 255, 255, 0.05) 0%,
+      transparent 40%
+    );
+}
+
