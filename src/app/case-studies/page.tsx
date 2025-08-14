@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-export default function ComingSoon({ title }: { title: string }) {
+export default function ComingSoonPage() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-black text-white px-6">
       <motion.h1
@@ -12,7 +12,7 @@ export default function ComingSoon({ title }: { title: string }) {
         transition={{ duration: 0.6 }}
         className="text-5xl font-bold mb-4"
       >
-        🚧 {title} is Coming Soon 
+        🚧 Coming Soon
       </motion.h1>
 
       <motion.p
